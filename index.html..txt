@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркировка в Честном Знаке | Ваша Компания</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+        header { background: #004aad; color: white; padding: 20px; text-align: center; }
+        section { padding: 20px; max-width: 900px; margin: auto; }
+        h1, h2 { color: #004aad; }
+        .service { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .price { color: green; font-weight: bold; }
+        .contact { background: #004aad; color: white; padding: 20px; border-radius: 8px; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: darkgreen; }
+        footer { text-align: center; padding: 15px; background: #eee; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Маркировка в Честном Знаке</h1>
+    <p>Создание карточек, заказ кодов, ввод в оборот — под ключ</p>
+</header>
+
+<section>
+    <h2>Наши услуги</h2>
+    <div class="service">
+        <h3>Создание карточек в ЧЗ</h3>
+        <p>Полная регистрация и создание карточек в системе Честный Знак.</p>
+        <p class="price">от 500 ₽ за карточку</p>
+    </div>
+    <div class="service">
+        <h3>Заказ кодов на эмиссию</h3>
+        <p>Получение кодов DataMatrix для вашей продукции.</p>
+        <p class="price">от 200 ₽ за код</p>
+    </div>
+    <div class="service">
+        <h3>Ввод товаров в оборот</h3>
+        <p>Быстрое внесение данных о маркированных товарах.</p>
+        <p class="price">от 300 ₽ за позицию</p>
+    </div>
+</section>
+
+<section>
+    <h2>Свяжитесь с нами</h2>
+    <div class="contact">
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" placeholder="Ваш запрос" rows="4" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p>📞 Телефон: +7 (999) 123-45-67</p>
+        <p>💬 WhatsApp: <a href="https://wa.me/79991234567" style="color:white;">Написать</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Маркировка ЧЗ — Все права защищены</p>
+</footer>
+
+</body>
+</html>
