@@ -113,21 +113,33 @@
 
 <section id="contacts">
     <h2>Контакты</h2>
-    <p>Email: info@markirovka.ru</p>
+    <p>Email: <a href="mailto:MAKS88KOVAL@yandex.ru">MAKS88KOVAL@yandex.ru</a></p>
     <p>Телефон: <a href="tel:89518249153">89518249153</a></p>
 
     <h3>Оставить заявку</h3>
-    <form action="mailto:info@markirovka.ru" method="post" enctype="text/plain">
+    <form id="contactForm" method="POST">
         <input type="text" name="name" placeholder="Ваше имя" required>
         <input type="tel" name="phone" placeholder="Ваш телефон" required>
         <textarea name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
         <button type="submit">Отправить</button>
     </form>
+    <p id="formStatus"></p>
 </section>
 
 <footer>
     © 2025 Маркировка Честный Знак. Все права защищены.
 </footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {method: 'POST',
+        body: new FormData(this)
+    })
+    .then(response => document.getElementById('formStatus').innerText = 'Заявка отправлена!')
+    .catch(error => document.getElementById('formStatus').innerText = 'Ошибка отправки.');
+});
+</script>
 
 </body>
 </html>
