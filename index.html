@@ -55,6 +55,25 @@
             max-width: 900px;
             margin: auto;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #ffcc00;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #e6b800;
+        }
         footer {
             background-color: #222;
             color: white;
@@ -95,7 +114,15 @@
 <section id="contacts">
     <h2>Контакты</h2>
     <p>Email: info@markirovka.ru</p>
-    <p>Телефон: +7 (900) 000-00-00</p>
+    <p>Телефон: <a href="tel:89518249153">89518249153</a></p>
+
+    <h3>Оставить заявку</h3>
+    <form action="mailto:info@markirovka.ru" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
 </section>
 
 <footer>
