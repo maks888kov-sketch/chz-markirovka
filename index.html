@@ -7,42 +7,79 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         header {
             background-color: #ffcc00;
             padding: 20px;
+            text-align: center;
         }
         header h1 {
             margin: 0;
         }
-        main {
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
             padding: 20px;
         }
         footer {
             background-color: #222;
             color: white;
+            text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Маркировка Честный Знак</h1>
-    </header>
-    <main>
-        <h2>Добро пожаловать!</h2>
-        <p>Здесь вы найдете полезную информацию о маркировке товаров.</p>
-    </main>
-    <footer>
-        © 2025. Все права защищены.
-    </footer>
+
+<header>
+    <h1>Маркировка Честный Знак</h1>
+    <p>Помогаем с оформлением и регистрацией товаров</p>
+</header>
+
+<nav>
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#contacts">Контакты</a>
+</nav>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p>Мы занимаемся профессиональной помощью в маркировке товаров по системе "Честный Знак". Работаем с любыми категориями товаров и гарантируем соблюдение всех требований законодательства.</p>
+</section>
+
+<section id="services">
+    <h2>Наши услуги</h2>
+    <ul>
+        <li>Регистрация в системе "Честный Знак"</li>
+        <li>Подготовка и загрузка кодов маркировки</li>
+        <li>Консультации по работе с маркировкой</li>
+        <li>Техническая поддержка</li>
+    </ul>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <p>Email: info@markirovka.ru</p>
+    <p>Телефон: +7 (900) 000-00-00</p>
+</section>
+
+<footer>
+    © 2025 Маркировка Честный Знак. Все права защищены.
+</footer>
+
 </body>
 </html>
