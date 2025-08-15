@@ -7,139 +7,116 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
-            background: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            color: white;
+            background-color: #ffcc00;
+            padding: 20px;
             text-align: center;
-            padding: 100px 20px;
         }
         header h1 {
-            font-size: 42px;
-            margin: 0 0 10px;
-        }
-        header p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        header a {
-            background-color: #ffcc00;
-            padding: 15px 30px;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        header a:hover {
-            background-color: #e6b800;
+            margin: 0;
         }
         nav {
-            background-color: #333;
+            background: #333;
+            color: #fff;
             padding: 10px;
             text-align: center;
         }
         nav a {
-            color: white;
-            text-decoration: none;
+            color: #fff;
             margin: 0 15px;
-            font-weight: bold;
+            text-decoration: none;
         }
-        nav a:hover {
-            text-decoration: underline;
+        main {
+            padding: 20px;
         }
         section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form input, form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 16px;
-        }
-        form button {
-            background-color: #ffcc00;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #e6b800;
+            margin-bottom: 40px;
         }
         footer {
             background-color: #222;
             color: white;
-            text-align: center;
             padding: 10px;
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #e6b800;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Маркировка Честный Знак</h1>
+        <p>Ваш надёжный партнёр по маркировке товаров</p>
+    </header>
 
-<header>
-    <h1>Маркировка Честный Знак</h1>
-    <p>Быстро. Надёжно. Профессионально.</p>
-    <a href="#contacts">Оставить заявку</a>
-</header>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
 
-<nav>
-    <a href="#about">О нас</a>
-    <a href="#services">Услуги</a>
-    <a href="#contacts">Контакты</a>
-</nav>
+    <main>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы предоставляем полный спектр услуг по работе с системой "Честный Знак": от создания карточек до ввода товаров в оборот.</p>
+        </section>
 
-<section id="about">
-    <h2>О нас</h2>
-    <p>Мы помогаем компаниям пройти все этапы работы с системой «Честный Знак» — от регистрации до печати кодов. Работаем с любыми категориями товаров и гарантируем полное соответствие требованиям.</p>
-</section>
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <ul>
+                <li>Создание карточек в Честном Знаке</li>
+                <li>Заказ кодов на эмиссию</li>
+                <li>Ввод товаров в оборот</li>
+                <li>Консультации по маркировке</li>
+            </ul>
+        </section>
 
-<section id="services">
-    <h2>Наши услуги</h2>
-    <ul>
-        <li>Регистрация в системе "Честный Знак"</li>
-        <li>Подготовка и загрузка кодов маркировки</li>
-        <li>Обучение работе с системой</li>
-        <li>Техническая поддержка</li>
-    </ul>
-</section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Email: <a href="mailto:MAKS88KOVAL@yandex.ru">MAKS88KOVAL@yandex.ru</a></p>
+            <p>Телефон: <a href="tel:89518249153">89518249153</a></p>
 
-<section id="contacts">
-    <h2>Контакты</h2>
-    <p>Email: <a href="mailto:MAKS88KOVAL@yandex.ru">MAKS88KOVAL@yandex.ru</a></p>
-    <p>Телефон: <a href="tel:89518249153">89518249153</a></p>
+            <h3>Отправьте нам сообщение</h3>
+            <form action="https://formspree.io/f/mnqenbvy" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="_replyto" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
 
-    <h3>Оставить заявку</h3>
-    <form id="contactForm" method="POST">
-        <input type="text" name="name" placeholder="Ваше имя" required>
-        <input type="tel" name="phone" placeholder="Ваш телефон" required>
-        <textarea name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
-        <button type="submit">Отправить</button>
-    </form>
-    <p id="formStatus"></p>
-</section>
-
-<footer>
-    © 2025 Маркировка Честный Знак. Все права защищены.
-</footer>
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {method: 'POST',
-        body: new FormData(this)
-    })
-    .then(response => document.getElementById('formStatus').innerText = 'Заявка отправлена!')
-    .catch(error => document.getElementById('formStatus').innerText = 'Ошибка отправки.');
-});
-</script>
-
+    <footer>
+        © 2025. Все права защищены.
+    </footer>
 </body>
 </html>
