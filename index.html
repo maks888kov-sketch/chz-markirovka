@@ -11,12 +11,30 @@
             padding: 0;
         }
         header {
-            background-color: #ffcc00;
-            padding: 20px;
+            background: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
             text-align: center;
+            padding: 100px 20px;
         }
         header h1 {
-            margin: 0;
+            font-size: 42px;
+            margin: 0 0 10px;
+        }
+        header p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        header a {
+            background-color: #ffcc00;
+            padding: 15px 30px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        header a:hover {
+            background-color: #e6b800;
         }
         nav {
             background-color: #333;
@@ -33,7 +51,9 @@
             text-decoration: underline;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
         }
         footer {
             background-color: #222;
@@ -47,7 +67,8 @@
 
 <header>
     <h1>Маркировка Честный Знак</h1>
-    <p>Помогаем с оформлением и регистрацией товаров</p>
+    <p>Быстро. Надёжно. Профессионально.</p>
+    <a href="#contacts">Оставить заявку</a>
 </header>
 
 <nav>
@@ -58,7 +79,7 @@
 
 <section id="about">
     <h2>О нас</h2>
-    <p>Мы занимаемся профессиональной помощью в маркировке товаров по системе "Честный Знак". Работаем с любыми категориями товаров и гарантируем соблюдение всех требований законодательства.</p>
+    <p>Мы помогаем компаниям пройти все этапы работы с системой «Честный Знак» — от регистрации до печати кодов. Работаем с любыми категориями товаров и гарантируем полное соответствие требованиям.</p>
 </section>
 
 <section id="services">
@@ -66,7 +87,7 @@
     <ul>
         <li>Регистрация в системе "Честный Знак"</li>
         <li>Подготовка и загрузка кодов маркировки</li>
-        <li>Консультации по работе с маркировкой</li>
+        <li>Обучение работе с системой</li>
         <li>Техническая поддержка</li>
     </ul>
 </section>
